@@ -110,3 +110,14 @@ canvas {
     left: 0;
     z-index: -999;
 }
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    width: 80px;
+    height: 40px;
+    margin-left: 40px;
+}
