@@ -112,6 +112,7 @@
 
     article section:first-child {
         padding-top: 30px;
+        margin-top: 0;
     }
 
 
@@ -292,6 +293,12 @@
         border-radius: 30px;
         border: dashed 2px;
         box-shadow: var(--white) 0px 0px 20px;
+        transition: box-shadow 1s;
+    }
+
+
+    .projects section:hover {
+        box-shadow: var(--white) 0px 0px 40px;
     }
 
     .project-header {
