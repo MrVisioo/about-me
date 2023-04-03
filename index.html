@@ -10,159 +10,160 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <script src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js"></script>
 </head>
 
 <body>
-    <header class="nav">
-        <div class="nav">
+    <header>
+        <nav>
             <a href="/">Home</a>
-            <a href="https://github.com/mrvisioo">GitHub</a>
             <a href="projects.html">Projects</a>
+            <a href="https://github.com/mrvisioo">GitHub</a>
+            <a href="https://www.linkedin.com/in/sergei-aslamazov-792197119/">LinkedIn</a>
             <break></break>
+        </nav>
+        <div class="controls">
+            <button id="play-button">⏸</button>
+            <button id="stop-button">⏹</button>
+            <button id="next-button">⏭</button>
+            <button id="eject-button">⏏</button>
+            <button id="bloom-button">⏻</button>
         </div>
     </header>
     <main class="flex">
-        <column class="flex-2 remaining-screen-height">
+        <article class="flex-2 remaining-screen-height">
             <section class="business-card">
-                <h2>Sergei Aslamazov<sub><a href="mailto:sergeyaslamazov@gmail.com">sergeyaslamazov@gmail.com</a></sub>
+                <h2>Sergei Aslamazov<br>
+                    <sub>
+                        <a href="mailto:sergeyaslamazov@gmail.com">sergeyaslamazov@gmail.com</a>
+                    </sub>
                 </h2>
                 <p>Software engineer with&nbsp;ten years of&nbsp;coding experience.</p>
             </section>
-            <section>
-                <h3>Skills</h3>
-                <ul>
-                    <li>Python, AsyncIO</li>
-                    <li>FastAPI, SQLAlchemy</li>
-                    <li>Git, CI/CD, Docker, Docker Compose</li>
-                    <li>PostgreSQL, Redis</li>
-                    <li>NumPy, Pandas, Matplotlib</li>
-                    <li>REST</li>
-                    <li>Flutter</li>
-                    <li>HTML, CSS, JS</li>
-                </ul>
+            <section id="skills-md">
+                <br>
+                <placeholder class="placeholder-header" style="width: 27%;"></placeholder>
+                <br>
+                <placeholder class="placeholder-33"></placeholder>
+                <placeholder class="placeholder-33"></placeholder>
+                <placeholder class="placeholder-20"></placeholder>
+                <br>
+                <placeholder class="placeholder-50"></placeholder>
+                <br>
+                <placeholder class="placeholder-20"></placeholder>
+                <placeholder class="placeholder-60"></placeholder>
+                <br>
+                <placeholder class="placeholder-33"></placeholder>
+                <placeholder class="placeholder-60"></placeholder>
+                <br>
+                <placeholder class="placeholder-33"></placeholder>
+                <placeholder class="placeholder-33"></placeholder>1
             </section>
-            <section>
-                <h3>Certifications</h3>
-                <ul>
-                    <li><a href="https://coursera.org/share/1dead417764880a37e3d4d1ab918e755">Deep Learning
-                            Specialization</a> by&nbsp;deeplearning.ai at&nbsp;Coursera</li>
-                    <li><a href="https://www.coursera.org/specializations/machine-learning-introduction">Machine
-                            Learning</a> by&nbsp;Stanford University at&nbsp;Coursera</li>
-                </ul>
+            <section id="cert-md">
+                <br>
+                <placeholder class="placeholder-header" style="width: 41%;"></placeholder>
+                <br>
+                <placeholder class="placeholder-60"></placeholder>
+                <placeholder class="placeholder-20"></placeholder>
+                <br>
+                <placeholder class="placeholder-50"></placeholder>
+                <placeholder class="placeholder-33"></placeholder>
             </section>
-            <section>
-                <button style="margin: 30px;" id="stop-button">No pipes!</button>
+        </article>
+        <article class="flex-4 remaining-screen-height">
+            <section id="description-md">
+                <br>
+                <placeholder class="placeholder-header" style="width: 27%;"></placeholder>
+                <br>
+                <placeholder class="placeholder-33"></placeholder>
+                <placeholder class="placeholder-33"></placeholder>
+                <placeholder class="placeholder-33"></placeholder>
+                <br>
+                <placeholder class="placeholder-50"></placeholder>
+                <placeholder class="placeholder-50"></placeholder>
+                <br>
+                <placeholder class="placeholder-20"></placeholder>
+                <placeholder class="placeholder-60"></placeholder>
+                <placeholder class="placeholder-20"></placeholder>
+                <br>
+                <placeholder class="placeholder-33"></placeholder>
+                <placeholder class="placeholder-60"></placeholder>
+                <br>
+                <br>
+                <placeholder class="placeholder-header" style="width: 23%;"></placeholder>
+                <br>
+                <placeholder class="placeholder-50"></placeholder>
+                <placeholder class="placeholder-50"></placeholder>
+                <br>
+                <placeholder class="placeholder-33"></placeholder>
+                <placeholder class="placeholder-33"></placeholder>
+                <placeholder class="placeholder-33"></placeholder>
+                <br>
+                <placeholder class="placeholder-33"></placeholder>
+                <placeholder class="placeholder-60"></placeholder>
+                <br>
+                <placeholder class="placeholder-20"></placeholder>
+                <placeholder class="placeholder-60"></placeholder>
+                <placeholder class="placeholder-20"></placeholder>
+                <br>
+                <placeholder class="placeholder-33"></placeholder>
+                <placeholder class="placeholder-33"></placeholder>
+                <placeholder class="placeholder-20"></placeholder>
+                <br>
+                <placeholder class="placeholder-60"></placeholder>
+                <br>
+                <br>
+                <placeholder class="placeholder-header" style="width: 38%;"></placeholder>
+                <br>
+                <placeholder class="placeholder-33"></placeholder>
+                <placeholder class="placeholder-60"></placeholder>
+                <br>
+                <placeholder class="placeholder-33"></placeholder>
+                <placeholder class="placeholder-33"></placeholder>
+                <placeholder class="placeholder-33"></placeholder>
+                <br>
+                <placeholder class="placeholder-50"></placeholder>
+                <placeholder class="placeholder-50"></placeholder>
+                <br>
+                <placeholder class="placeholder-20"></placeholder>
+                <placeholder class="placeholder-60"></placeholder>
+                <placeholder class="placeholder-20"></placeholder>
+                <br>
             </section>
-        </column>
-        <column class="flex-4 remaining-screen-height">
-            <section>
-                <h3>Durak-Online Project<sub>Software Developer | 2022-present</sub>
-                </h3>
-                <ul>
-                    <li>Designed and implemented an intuitive and accessible online platform to facilitate seamless
-                        gameplay for the popular Durak card game.</li>
-                    <li>Optimized real-time gameplay experience by integrating Redis, minimizing latency and ensuring
-                        smooth game flow.</li>
-                    <li>Constructed the platform's frontend using Flutter, acquired valuable experience in developing
-                        online engaging real-time online games.</li>
-                    <li>Orchestrated end-to-end project management, culminating in a seamless deployment of the
-                        Durak-Online platform for end-users.</li>
-                </ul>
-            </section>
-            <section>
-                <h3>Freelance Software Developer<sub>Software Developer | 2016-present</sub></h3>
-                <ul>
-                    <li>
-                        <i>Software Simulation of Forest Fires:</i>
-                        <ul>
-                            <li>Devised and implemented sophisticated algorithms to accurately model the complex
-                                behavior of forest fires, demonstrating mastery of both scientific principles and
-                                software engineering concepts.</li>
-                            <li>Constructed a user-friendly interface to effectively visualize the simulation results,
-                                enhancing the platform's accessibility and usability.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <i>Performance Metrics for Medical AI Startup:</i>
-                        <ul>
-                            <li>Implemented performance metrics using Python and TensorFlow for a medical AI startup,
-                                resulting in significant improvements to the accuracy of their deep learning model.
-                            </li>
-                            <li>Demonstrated expertise in machine learning and a strong proficiency in relevant
-                                frameworks and programming languages.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <i>Consulting Services:</i>
-                        <ul>
-                            <li>Provided expert consulting services, leveraging comprehensive knowledge in the field to
-                                identify technical challenges and recommend solutions. </li>
-                            <li>Effectively communicated with clients and demonstrated exceptional problem-solving
-                                skills, resulting in the successful resolution of complex technical issues.</li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-            <section>
-                <h3>Dragis Web Design Agency<sub>Web Developer | 2015-2017</sub></h3>
-                <ul>
-                    <li>Proficiently designed and developed websites using HTML, CSS, and JavaScript, showcasing a
-                        strong grasp of web development fundamentals and design principles.</li>
-                    <li>Leveraged the Django framework to develop high-quality, dynamic websites, demonstrating a keen
-                        ability to master new technologies and integrate them seamlessly into the development process.
-                    </li>
-                    <li>Adapted quickly and effectively to the web design industry, effectively applying new concepts
-                        and approaches to meet project requirements and exceed client expectations.</li>
-                </ul>
-                <h3>Indie Games Developer<sub>Game Developer | 2014-present</sub></h3>
-                <ul>
-                    <li>Developed a passion for software engineering during school years, sparking a lifelong interest
-                        in creating innovative solutions to complex technical problems.</li>
-                    <li>Devotes personal time to developing and producing completed games, showcasing a strong work
-                        ethic and commitment to the craft.</li>
-                    <li>Demonstrated creativity and technical skill by designing interactive solutions for cross-media
-                        and online marketing, effectively engaging audiences and driving engagement.</li>
-                </ul>
-            </section>
-            <section>
-                <h3>Personal Projects & Interests</h3>
-                <ul>
-                    <li>
-                        <i>Python OpenGL Model Viewer</i>
-                        <ul>
-                            <li>Conducted a comprehensive investigation into the viability of Python as a language for
-                                3D software, resulting in the development of performant software that effectively
-                                overcame limitations of the language.</li>
-                            <li>Created reusable code for Python 3D applications on top of ModernGL, showcasing a deep
-                                understanding of software engineering principles and best practices.</li>
-                            <li>Developed invaluable experience working with OpenGL, a skill set essential in the WebGL
-                                era.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <i>TeachLife Pro Smart Lightbulb Hacking</i>
-                        <ul>
-                            <li>Successfully reverse-engineered the communication protocol of a generic smart lightbulb,
-                                demonstrating a keen ability to tackle complex technical challenges. </li>
-                            <li>Developed an MQTT client to communicate with the smart lightbulb, showcasing a mastery
-                                of programming languages and protocols.</li>
-                            <li>Designed and implemented bash scripts to perform home automation tasks, effectively
-                                streamlining daily routines and enhancing quality of life.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <i>Pipes Screensaver - WebGL</i>
-                        <ul>
-                            <li>Applied Three.js to enhance the visual appeal of a personal website, showcasing a
-                                creative and innovative approach to web design.</li>
-                            <li>Demonstrated practical experience working with WebGL and associated frameworks,
-                                effectively expanding technical skills and capabilities.</li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-        </column>
+        </article>
     </main>
+    <div id="pipes-container"></div>
+    <script>
+        var converter = new showdown.Converter();
+        fetch('/DESCRIPTION.MD')
+            .then(response => response.text())
+            .then((data) => {
+                var html = converter.makeHtml(data);
+                document.getElementById("description-md").innerHTML = html;
+            })
+        fetch('/SKILLS.MD').then(response => response.text())
+            .then((data) => {
+                var html = converter.makeHtml(data);
+                document.getElementById("skills-md").innerHTML = html;
+            })
+        fetch('/CERT.MD').then(response => response.text())
+            .then((data) => {
+                var html = converter.makeHtml(data);
+                document.getElementById("cert-md").innerHTML = html;
+            })
+    </script>
+    <script>
+        let ejectButton = document.getElementById("eject-button");
+        let main = document.getElementsByTagName("main")[0];
+        let ejected = false;
+        if (ejectButton != null) {
+            ejectButton.textContent = "⏏";
+            ejectButton.onclick = () => {
+                main.style.opacity = Number(ejected);
+                ejected = !ejected;
+            }
+        }
+    </script>
     <script src="pipes.js"></script>
 </body>
 

@@ -10,114 +10,107 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <script src="include-html.js"></script>
 </head>
 
-<body>
-    <header class="nav">
-        <div class="nav">
+<body class="projects">
+    <header>
+        <nav>
             <a href="/">Home</a>
-            <a href="https://github.com/mrvisioo">GitHub</a>
             <a href="projects.html">Projects</a>
+            <a href="https://github.com/mrvisioo">GitHub</a>
+            <a href="https://www.linkedin.com/in/sergei-aslamazov-792197119/">LinkedIn</a>
             <break></break>
-        </div>
+        </nav>
     </header>
     <main class="flex">
-        <column>
-            <section>
-                <a href="https://mrvisioo.github.io/candles-simulator/">
-                    <h2>Candles Simulator</h2>
-                </a>
-                <figure>
-                    <img src="candle.png">
-                    <figcaption>So pretty!</figcaption>
-                </figure>
-                <p> Candle making and burning simulator. Inspired by Let's create! Pottery this game adds it own twist
-                    allowing to destroy finished creations. </p>
-                <p> Candles simulator was made in collaboration with local candle artist and is used in cross-media
-                    marketing campaign. </p>
-                <p> Candles simulator is made in an overall low-fi aesthetic. UI design, low-poly models and
-                    low-resolution textures are used to bring a sense of home and nostalgia. A metaphor for the natural
-                    warmth of the candle. </p>
-                <p> Use your mouse cursor an a variety of settings to shape the candle to your liking. Save it for a
-                    rainy day or watch it burn. </p>
-            </section>
-            <section>
-                <h2>PiggyX</h2>
-                <figure>
-                    <img src="piggy.png">
-                    <figcaption>A lot of piggies to catch!</figcaption>
-                </figure>
-                <p> PiggyX is a gift-card of game, a christmas present. The objective of the game is to decorate a
-                    christmas tree. The player will need to catch all of the piggies, which escaped with the
-                    decorations. </p>
-            </section>
-            <section>
-                <h2>Krab Island</h2>
-                <figure>
-                    <img src="krabs.png">
-                    <figcaption>Run, little crab!</figcaption>
-                </figure>
-                <p> Krab Island is an experience of living on a desert island. Unique art style and environment details
-                    are fun to look at while you hunt the crabs for a meal. </p>
-                <p>Krab Island soundtrack is instrumental ambient performed on sitar and singing bowl, which further
-                    amplifies the aesthetic.</p>
-                <p>Krab Island is an ode to the lazy hot summer day.</p>
-            </section>
-        </column>
-        <column>
+        <article>
             <section>
                 <a href="https://play-durak.online">
-                    <h2>Durak Online</h2>
+                    <h2 class="project-header">Durak Online</h2>
                 </a>
                 <figure>
                     <img src="durak.png">
                     <figcaption>Lucky at cards, unlucky in love.</figcaption>
                 </figure>
-                <p> Durak-Online, was created in response to a need for a simple online platform for playing Durak card
-                    game. Other available solutions required complicated setup processes, so I took it upon myself to
-                    create a user-friendly option. With numerous successful Durak-Online sites currently in existence,
-                    there is certainly a market for it. </p>
-                <p> Although nothing in this project itself was particularly complex, the real-time nature of an online
-                    real-time game necessitated some shift in concepts. My focus was scalability and minimal latency.
-                </p>
-                <p> The creation of the frontend for this project was an enjoyable experience. Having previously worked
-                    with Flutter, I chose to use it again. Durak Online being my biggest Flutter project yet, I'm
-                    satisfied with the competitive look and feel that I managed to design and create.</p>
+                <p> Durak-Online is an online platform designed to cater to the need for a simple and user-friendly
+                    solution for playing the Durak card game. Unlike other existing solutions that require extensive
+                    setup processes and registration, Durak-Online provides a hassle-free gaming experience that can be
+                    started within seconds. </p>
+                <p>Although the game mechanics were not particularly complex, the real-time nature of an online game
+                    required careful consideration of scalability and minimal latency. With numerous successful
+                    Durak-Online sites currently in operation, it is clear that there is a strong demand for this type
+                    of platform. </p>
+                <p>Leveraging my prior experience with Flutter, I was able to create a competitive look and feel for
+                    Durak-Online. As my biggest Flutter project to date, I am satisfied with the end result and the
+                    unique design elements that I incorporated. </p>
             </section>
             <section>
-                <a href="https://mrvisioo.github.io/smith/">
-                    <h2>The Smith And The Devil</h2>
+                <h2 class="project-header">PiggyX</h2>
+                <figure>
+                    <img src="piggy.png">
+                    <figcaption>A lot of piggies to catch!</figcaption>
+                </figure>
+                <p> PiggyX is a simple toy about chasing the pigs. You see, they stole the tree decorations, so no
+                    celebration until they're caught. Also featuring original holiday tunes composed by me.</p>
+            </section>
+            <section>
+                <h2 class="project-header">Krab Island</h2>
+                <figure>
+                    <img src="krabs.png">
+                    <figcaption>Run, little crab!</figcaption>
+                </figure>
+                <p> Krab Island is a digital vacation. Chase the crabs, while the banger of a soundtrack is playing.
+                    Spot the birds, while you're warming by the fire. </p>
+                <p> Krab Island is a joyful experience, where the joy was making it. You might still appreciate the art
+                    that went into the sprites and the music though.</p>
+            </section>
+        </article>
+        <article>
+            <section>
+                <a href="https://mrvisioo.github.io/candles-simulator/">
+                    <h2 class="project-header">Candles Simulator</h2>
                 </a>
+                <figure>
+                    <img src="candle.png">
+                    <figcaption>So pretty!</figcaption>
+                </figure>
+                <p> Candles Simulator is a unique game that lets you shape and burn candles to your heart's content.
+                    Inspired by the popular game "Let's Create! Pottery", this game has its own unique twist: you can
+                    destroy your finished creations! </p>
+                <p> The Candle Simulator was created in collaboration with a local candle artist and is part of a
+                    cross-media marketing campaign. We aimed to create a low-fi aesthetic by using simple UI designs,
+                    low-poly models, and low-resolution textures to evoke a sense of home and nostalgia. This aesthetic
+                    serves as a metaphor for the natural warmth of candles. </p>
+                <p> With the help of your mouse cursor and a range of settings, you can shape your candle however you
+                    like. You can save it for a rainy day or simply sit back and watch it burn. </p>
+            </section>
+            <section>
+                <h2 class="project-header">The Smith And The Devil</h2>
                 <figure>
                     <img src="smtih.png">
                     <figcaption>Hard work!</figcaption>
                 </figure>
-                <p> The Smith And The Devil is a game about the beauty of material science, of working with metal. A
-                    game about dark force lending the power to shape stone for the reason to subdue human soul into a
-                    place of suffering. Or maybe it was all just a dream... Brought from the toxic fumes of the
-                    blacksmith trade. </p>
-                <p> A high concept piece at the design stage The Smith And The Devil currently exists as a freely
-                    available demo. </p>
+                <p> The Smith And The Devil is a game about the beauty of material science. The concept revolves around
+                    the dark force living in the blacksmith forge. It lends it's power to our protagonist, in hope of
+                    one day subduing their soul. Your goal is to balance between a profitable business and going insane
+                    and jumping into the forge.</p>
             </section>
             <section>
-                <h2>War Of Kyborg</h2>
+                <h2 class="project-header">War Of Kyborg</h2>
                 <figure>
                     <img src="kyborg.jpg">
                     <figcaption>That's a style!</figcaption>
                 </figure>
-                <p> War Of Kyborg is an early experiment in game development and software development for me overall.
-                    It's inspired with ascii rogue-like titles such as ADOM and Dwarf Fortress. </p>
-                <p> War Of Kyborg is turn-based hot-sit two-player game. Each player takes control of a
-                    Kyborg<sup>tm</sup> (a robot really). The Kyborgs are powerful beings able to punch through rock,
-                    which is one of the game objectives, but they cannot swim in water. </p>
-                <p> Players must collect stone to build infrastructure: fortifications, roads, stairs. Everything that
-                    can help them defend against the inevitable enemy attack. </p>
-                <p> Developed on and off between years 2012-2016 it came through multiple iterations of complete
-                    rewrites in Pascal, Delphi and C++. Some fun features include the ability to weaponize infinite
-                    loops against the opponent. </p>
+                <p> War Of Kyborg is turn-based hot-sit two-player game. Each player takes control of a robot,
+                    possessing the power to punch through rock and build structures out of it.</p>
+                <p> Players need to destroy the opposition. Robots can't swim, so you can lure the opponent into a
+                    river. Another idea is to build a circle of conveyors, where the infinite loop will surely disable
+                    any robot. Or simply drop yourself from a high place like a projectile.</p>
+                <p> War Of Kyborg was the original entry into software development for me. After devouring all of the
+                    Pascal coding manuals in the local library, I needed something more challenging then text-based
+                    calculators.</p>
             </section>
-        </column>
+        </article>
     </main>
 </body>
 
