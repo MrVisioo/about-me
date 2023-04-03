@@ -134,7 +134,7 @@
     main {
         background-color: var(--white);
         margin-top: 60px;
-        border-radius: 5px;
+        border-radius: 10px;
         box-shadow: 5px 5px 5px var(--accent);
     }
 
@@ -193,6 +193,7 @@
     ::marker {
         content: "‣ ";
         font-size: 0.7em;
+        color: steelblue
     }
 
     ul {
@@ -218,6 +219,7 @@
     sub {
         font-weight: normal;
         padding: 0 0.4em;
+        color: rgba(50, 50, 100, 0.8);
     }
 
     figure {
@@ -338,7 +340,7 @@
     }
 
     .remaining-screen-height {
-        height: unset;
+        max-height: unset;
         overflow: unset;
     }
 
