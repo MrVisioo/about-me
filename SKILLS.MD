@@ -6,4 +6,3 @@
 - NumPy, Pandas, Matplotlib
 - REST
 - Flutter
-- HTML, CSS, JS
