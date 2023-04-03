@@ -21,6 +21,13 @@
             <a href="https://www.linkedin.com/in/sergei-aslamazov-792197119/">LinkedIn</a>
             <break></break>
         </nav>
+        <div class="controls">
+            <button id="play-button">⏸</button>
+            <button id="stop-button">⏹</button>
+            <button id="next-button">⏭</button>
+            <button id="eject-button">⏏</button>
+            <button id="bloom-button">⏻</button>
+        </div>
     </header>
     <main class="flex">
         <article>
@@ -111,6 +118,20 @@
                     calculators.</p>
             </section>
         </article>
+        <div id="pipes-container"></div>
+        <script>
+            let ejectButton = document.getElementById("eject-button");
+            let main = document.getElementsByTagName("main")[0];
+            let ejected = false;
+            if (ejectButton != null) {
+                ejectButton.textContent = "⏏";
+                ejectButton.onclick = () => {
+                    main.style.opacity = Number(ejected);
+                    ejected = !ejected;
+                }
+            }
+        </script>
+        <script src="pipes.js"></script>
     </main>
 </body>
 
