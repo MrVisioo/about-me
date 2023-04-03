@@ -5,12 +5,9 @@
 
 ### Freelance Software Developer<br><sub>Software Developer | 2016-present</sub>
 
-- Software Simulation of Forest Fires:
-    - Utilized sophisticated algorithms to model forest fires.
-- Performance Metrics for Medical AI Startup:
-    - Applied performance metrics for a medical AI startup, resulting in improved accuracy for their deep learning model.
-- Consulting Services:
-    - Identified technical challenges and devised effective solutions, prioritizing clear communication with clients.
+- Utilized sophisticated algorithms to model forest fires.
+- Applied performance metrics for a medical AI startup, resulting in improved accuracy for their deep learning model.
+- Identified technical challenges and devised effective solutions, prioritizing clear communication with clients.
 
 ### Dragis Web Design Agency<br><sub>Web Developer | 2015-2017</sub>
 
