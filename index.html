@@ -134,7 +134,7 @@
     </main>
     <div id="pipes-container"></div>
     <script>
-        var converter = new showdown.Converter();
+        var converter = new showdown.Converter({ noHeaderId: true });
         fetch('/DESCRIPTION.MD')
             .then(response => response.text())
             .then((data) => {
