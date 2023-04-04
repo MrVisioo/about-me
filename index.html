@@ -25,7 +25,7 @@
         </nav>
         <div class="controls" style="font-variation-settings: 'FILL' 1">
             <button id="prev-button"><span class="material-symbols-rounded">skip_previous</span></button>
-            <button id="play-button"><span class="material-symbols-rounded">play_arrow</span></button>
+            <button id="play-button"><span class="material-symbols-rounded">pause</span></button>
             <button id="stop-button"><span class="material-symbols-rounded">stop</span></button>
             <button id="next-button"><span class="material-symbols-rounded">skip_next</span></button>
             <button id="eject-button"><span class="material-symbols-rounded">eject</span></button>
@@ -172,7 +172,6 @@
                 } else {
                     main.style.display = "none";
                 }
-                // main.style.opacity = Number(ejected);
                 ejected = !ejected;
             }
         }

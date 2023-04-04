@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&family=Inter&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@1" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 </head>
@@ -21,12 +22,20 @@
             <a href="https://www.linkedin.com/in/sergei-aslamazov-792197119/">LinkedIn</a>
             <break></break>
         </nav>
-        <div class="controls">
-            <button id="play-button">⏸</button>
-            <button id="stop-button">⏹</button>
-            <button id="next-button">⏭</button>
-            <button id="eject-button">⏏</button>
-            <button id="bloom-button">⏻</button>
+        <div class="controls" style="font-variation-settings: 'FILL' 1">
+            <button id="prev-button"><span class="material-symbols-rounded">skip_previous</span></button>
+            <button id="play-button"><span class="material-symbols-rounded">pause</span></button>
+            <button id="stop-button"><span class="material-symbols-rounded">stop</span></button>
+            <button id="next-button"><span class="material-symbols-rounded">skip_next</span></button>
+            <button id="eject-button"><span class="material-symbols-rounded">eject</span></button>
+            <button id="bloom-button"><span class="material-symbols-rounded">light</span></button>
+            <!-- Flight: -->
+            <!-- WASD - Forward, Backward, Strafe Left/Right -->
+            <!-- Arrow Keys - Pan Up, Down, Left, Right -->
+            <!-- QE - Roll Left/Right -->
+            <!-- RF - Up, Down -->
+            <button style="display: none;" id="flight-button"><span
+                    class="material-symbols-rounded">flight_takeoff</span></button>
         </div>
     </header>
     <main class="flex">
@@ -124,9 +133,12 @@
             let main = document.getElementsByTagName("main")[0];
             let ejected = false;
             if (ejectButton != null) {
-                ejectButton.textContent = "⏏";
                 ejectButton.onclick = () => {
-                    main.style.opacity = Number(ejected);
+                    if (ejected) {
+                        main.style.display = "";
+                    } else {
+                        main.style.display = "none";
+                    }
                     ejected = !ejected;
                 }
             }
