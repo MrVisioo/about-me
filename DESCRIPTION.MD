@@ -1,4 +1,4 @@
-### Durak-Online Project<br><sub>Software Developer | 2022-present</sub>
+### Play-Durak.Online<br><sub>Fullstack Software Developer | 2022-present</sub>
 
 - Implemented an intuitive online platform for the popular Durak card game, optimized for a real-time gameplay experience. Constructed a sleek frontend using Flutter.
 - Designed a successful project architecture, culminating in a seamless deployment of the Durak-Online platform for end-users.
